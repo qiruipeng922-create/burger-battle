@@ -1,0 +1,10 @@
+# The analysis scripts (engine, Q1 enumeration, verification, Q2 simulation,
+# Q3 welfare, figure generation, figure audit) use the Python standard library
+# only and need nothing installed.
+#
+# Only the optional report builder needs third-party packages:
+reportlab>=4.0
+Pillow>=10.0
+#
+# Re-rasterising the SVG figures needs Node.js with sharp (see render_png.js);
+# the rendered PNG files are already included in figures/.
